@@ -24,7 +24,7 @@ for row_id in df_raw.index :
 
 #2 LOAD geojson (FROM SAVED see JP_Main.py)
 import pickle
-with open('JP_ChoroMap/Data.json', 'rb') as fp :
+with open('JP_ChoroMap/Data.pckl', 'rb') as fp :
     prefs = pickle.load(fp)
 
 for feat in prefs['features'] : # Put the id in the right format
@@ -225,19 +225,4 @@ fig.show()
 'Popularization of voluntary automobile \ninsurance on property2010'
 'Popularization of voluntary automobile \ninsurance on property2015'
 'Popularization of voluntary automobile \ninsurance on property2017'
-
-For some reason plotly.py was unable to communicate with the
-local orca server process, even though the server process seems to be running.
-
-Please review the process and connection information below:
-
-orca status
------------
-    state: running
-    executable: /usr/local/bin/orca
-    version: 1.2.1
-    port: 58922
-    pid: 34806
-    command: ['/usr/local/bin/orca', 'serve', '-p', '58922', '--plotly', '/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/plotly/package_data/plotly.min.js', '--graph-only', '--mathjax', 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js']
-
 """

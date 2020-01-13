@@ -17,7 +17,7 @@ with open('JP_ChoroMap/Data.json', 'wb') as fp :
 
 
 # SAVED
-# with open('JP_ChoroMap/Data.json', 'rb') as fp :
+# with open('JP_ChoroMap/Data.pckl', 'rb') as fp :
 #     prefs = pickle.load(fp)
 
 for feat in prefs['features'] :
