@@ -70,7 +70,6 @@ fig = px.choropleth_mapbox(df, geojson=prefs, locations='Loc_ID', hover_name='Lo
 
 fig.update_layout(margin={"r":0,"t":1,"l":0,"b":0}, coloraxis_colorbar={'title': Col_Interest})
 fig.show()
-fig.write_image("fig_test.png")
 
 """
 'Location'

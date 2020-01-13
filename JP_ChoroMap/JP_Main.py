@@ -13,7 +13,7 @@ import pykakasi
 with urlopen('https://raw.githubusercontent.com/codeforamerica/click_that_hood/master/public/data/japan.geojson') as response:
     prefs = json.load(response, encoding='utf-8')
 with open('JP_ChoroMap/Data.json', 'wb') as fp :
-    pickle.dump(prefs, fp, protocol=pickle.DEFAULT_PROTOCOL)
+    pickle.dump(prefs, fp, protocol=pickle.HIGHEST_PROTOCOL)
 
 
 # SAVED
